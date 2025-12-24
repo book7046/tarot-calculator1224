@@ -399,12 +399,12 @@ function renderSpreadVisual() {
             html = `
             <div class="relative flex flex-col items-center gap-2">
                 <div class="flex gap-24 md:gap-32">
-                    ${getVisualCardHTML(2)}
-                    ${getVisualCardHTML(1)}
+                    ${getVisualCardHTML(3)}
+                    ${getVisualCardHTML(4)}
                 </div>
                 <div class="flex gap-12 md:gap-16 mt-2">
-                    ${getVisualCardHTML(4)}
-                    ${getVisualCardHTML(3)}
+                    ${getVisualCardHTML(1)}
+                    ${getVisualCardHTML(2)}
                 </div>
                 <div class="mt-2">
                     ${getVisualCardHTML(0)}
@@ -425,9 +425,9 @@ function renderSpreadVisual() {
                     ${getVisualCardHTML(3)}
                 </div>
                 <div class="flex flex-col-reverse gap-2">
-                    ${getVisualCardHTML(6)}
-                    ${getVisualCardHTML(5)}
                     ${getVisualCardHTML(4)}
+                    ${getVisualCardHTML(5)}
+                    ${getVisualCardHTML(6)}
                 </div>
             </div>`;
             break;
@@ -437,7 +437,6 @@ function renderSpreadVisual() {
             html = `
             <div class="flex flex-col gap-8 items-center">
                 <div class="flex flex-col items-center">
-                    <div class="mb-2 text-yellow-200/50 text-xs border-b border-yellow-200/20 pb-1">上三角 (原因/未來/對策)</div>
                     <div class="flex flex-col items-center gap-2">
                         <div>${getVisualCardHTML(3, '4.原因')}</div>
                         <div class="flex gap-16">
@@ -448,7 +447,6 @@ function renderSpreadVisual() {
                 </div>
 
                 <div class="flex flex-col items-center">
-                    <div class="mb-2 text-yellow-200/50 text-xs border-b border-yellow-200/20 pb-1">下三角 (環境/現在/過去)</div>
                     <div class="flex flex-col items-center gap-2">
                          <div class="flex gap-16">
                             ${getVisualCardHTML(5, '6.對策')}
