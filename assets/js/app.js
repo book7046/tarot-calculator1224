@@ -382,10 +382,10 @@ function renderSpreadVisual() {
             html = `
             <div class="flex flex-col items-center gap-4">
                 <div>${getVisualCardHTML(3, '4.結果')}</div>
-                <div class="text-yellow-500/50">⬇</div>
+                
                 
                 <div>${getVisualCardHTML(2, '3.過程')}</div>
-                <div class="text-yellow-500/50">⬇</div>
+                
                 
                 <div class="flex gap-12 border-t border-white/10 pt-2">
                     ${getVisualCardHTML(0, '1.抽牌人現況')}
@@ -399,12 +399,12 @@ function renderSpreadVisual() {
             html = `
             <div class="relative flex flex-col items-center gap-2">
                 <div class="flex gap-24 md:gap-32">
-                    ${getVisualCardHTML(4)}
-                    ${getVisualCardHTML(3)}
-                </div>
-                <div class="flex gap-12 md:gap-16 mt-2">
                     ${getVisualCardHTML(2)}
                     ${getVisualCardHTML(1)}
+                </div>
+                <div class="flex gap-12 md:gap-16 mt-2">
+                    ${getVisualCardHTML(4)}
+                    ${getVisualCardHTML(3)}
                 </div>
                 <div class="mt-2">
                     ${getVisualCardHTML(0)}
@@ -422,11 +422,11 @@ function renderSpreadVisual() {
                     ${getVisualCardHTML(2)}
                 </div>
                 <div class="pb-2">
-                    ${getVisualCardHTML(5)}
+                    ${getVisualCardHTML(3)}
                 </div>
                 <div class="flex flex-col-reverse gap-2">
                     ${getVisualCardHTML(6)}
-                    ${getVisualCardHTML(3)}
+                    ${getVisualCardHTML(5)}
                     ${getVisualCardHTML(4)}
                 </div>
             </div>`;
@@ -441,8 +441,8 @@ function renderSpreadVisual() {
                     <div class="flex flex-col items-center gap-2">
                         <div>${getVisualCardHTML(3, '4.原因')}</div>
                         <div class="flex gap-16">
+                            ${getVisualCardHTML(1, '2.現在')}
                             ${getVisualCardHTML(2, '3.未來')}
-                            ${getVisualCardHTML(5, '6.對策')}
                         </div>
                     </div>
                 </div>
@@ -451,10 +451,10 @@ function renderSpreadVisual() {
                     <div class="mb-2 text-yellow-200/50 text-xs border-b border-yellow-200/20 pb-1">下三角 (環境/現在/過去)</div>
                     <div class="flex flex-col items-center gap-2">
                          <div class="flex gap-16">
-                            ${getVisualCardHTML(1, '2.現在')}
-                            ${getVisualCardHTML(0, '1.過去')}
+                            ${getVisualCardHTML(5, '6.對策')}
+                            ${getVisualCardHTML(4, '5.環境')}
                         </div>
-                        <div>${getVisualCardHTML(4, '5.環境')}</div>
+                        <div>${getVisualCardHTML(0, '1.過去')}</div>
                     </div>
                 </div>
             </div>`;
